@@ -1,0 +1,11 @@
+.env
+config/devices.yaml
+*.db
+*.db-wal
+*.db-shm
+__pycache__/
+venv/
+.venv/
+.pytest_cache/
+
+GNS3/project-files/

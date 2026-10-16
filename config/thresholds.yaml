@@ -1,0 +1,5 @@
+# Ngưỡng cảnh báo. Khi demo có thể hạ thấp (ví dụ cpu warning: 5) để dễ kích hoạt.
+cpu_percent:     {warning: 80, critical: 90}
+ram_percent:     {warning: 85, critical: 95}
+traffic_percent: {warning: 80, critical: 95}   # % băng thông interface
+errors_delta:    {warning: 50}                 # số lỗi/CRC/drops MỚI trong 1 chu kỳ

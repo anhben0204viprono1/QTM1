@@ -1,0 +1,5 @@
+devices:
+  - {hostname: R1,      ip: 10.0.0.1, vendor: cisco}
+  - {hostname: R2,      ip: 10.0.0.2, vendor: cisco}
+  - {hostname: SW1,     ip: 10.0.0.3, vendor: cisco, watch_interfaces: [GigabitEthernet0/2]}
+  - {hostname: R-DOWN,  ip: 10.0.0.9, vendor: cisco, mock_fail: true}

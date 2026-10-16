@@ -1,0 +1,17 @@
+# Copy thành config/devices.yaml rồi sửa IP cho đúng lab của nhóm.
+# Tài khoản SSH nằm trong file .env (NET_USERNAME / NET_PASSWORD), KHÔNG ghi ở đây.
+devices:
+  - hostname: R1
+    ip: 192.168.56.11
+    vendor: cisco
+    device_type: cisco_ios
+  - hostname: R2
+    ip: 192.168.56.12
+    vendor: cisco
+    device_type: cisco_ios
+  - hostname: SW1
+    ip: 192.168.56.21
+    vendor: cisco
+    device_type: cisco_ios
+    # Switch có nhiều cổng không cắm dây: chỉ cảnh báo "interface down" trên các cổng này
+    watch_interfaces: [GigabitEthernet0/1, GigabitEthernet0/2]
